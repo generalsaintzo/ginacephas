@@ -1,0 +1,99 @@
+.events-container {
+    margin-top: 100px;
+    background-color: #000;
+    color: #fff;
+    padding: 40px 10%;
+    font-family: sans-serif;
+}
+
+.live-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.event-row {
+    display: grid;
+    /* This defines 3 columns: Left (Date/Venue), Middle (Location), Right (Button) */
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 20px 0;
+}
+
+.event-meta { display: flex; gap: 20px; }
+.event-date { font-weight: bold; }
+.event-location { text-align: center; }
+
+.ticket-button {
+    justify-self: end;
+    border: 1px solid #fff;
+    padding: 8px 25px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+.btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 40px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.btn-primary:hover {
+    background-color: white;
+    color: black;
+}
+.latest-release {
+    padding: 80px 5%;
+    background-color: #000; /* Dark theme focus */
+    color: #fff;
+}
+
+.release-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.release-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.release-info { flex: 1; }
+
+.release-info h2 { font-size: 1.2rem; color: #ff5722; } /* Brand Accent Color */
+.release-info h1 { font-size: 3rem; margin: 20px 0; }
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 40px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.btn-primary:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Mobile: Stack columns */
+@media (max-width: 768px) {
+    .release-container { flex-direction: column; text-align: center; }
+}
