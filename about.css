@@ -1,0 +1,202 @@
+.about-container{
+    color:white;
+    margin-top: 110px;
+    padding: 0 20px;
+}
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+p{
+    font-size: 1.3rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.latest-release {
+    padding: 80px 5%;
+    background-color: #000; /* Dark theme focus */
+    color: #fff;
+}
+
+.release-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.release-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.release-info { flex: 1; }
+
+.release-info h2 { font-size: 1.2rem; color: #ff5722; } /* Brand Accent Color */
+.release-info h1 { font-size: 3rem; margin: 20px 0; }
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 40px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.btn-primary:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Mobile: Stack columns */
+@media (max-width: 768px) {
+    .release-container { flex-direction: column; text-align: center; }
+}
+
+.sidebar-logo{
+    margin-top: -10px;
+}
+
+.sidebar-logo h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+.hamburger-icon{     /* opens the sidebar*/
+    display: none;
+}
+
+/* side bar list*/
+.side-bar{
+    background-color: white;
+    color:black;
+    width:80%;
+    position: fixed;
+    top:0;
+    right:0;
+    bottom: 0;
+    display: none;
+    z-index: 999;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: -3px 0 10px black;
+    
+}
+
+.side-bar ul{
+    list-style-type: none;
+    padding-top: 35px;
+}
+.side-bar a{
+    text-decoration: none;
+    color:black;
+    font-size: 30px;
+    font-weight: 400;
+    transition: .4s ease-in-out;
+}
+.side-bar li{
+    text-align: center;
+    padding: 15px 0;
+}
+.side-bar a:hover{
+    color:orange;
+    transition: .4s ease-in-out;
+}
+.sidebar-logo{
+    display: inline-block;
+}
+
+/* side bar icons*/
+
+.sidebar-icons1 svg{
+    fill:black;
+    height: 60px;
+}
+.sidebar-icons1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px
+}
+.sidebar-icons2 svg{
+    fill:black;
+    height: 60px;
+}
+.sidebar-icons2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px
+}
+
+.side-bar svg:hover{
+    opacity:.7;
+    transition: .3s ease-in-out;
+    fill:orange;
+}
+
+/*sidebar hover elements*/
+/* Only targets links with the class 'text-link' */
+.text-link {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-link::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: orange;
+    transition: width 0.4s ease-in-out;
+}
+
+.text-link:hover::after {
+    width: 100%;
+}
+
+.hamburger-icon{     /* opens the sidebar*/
+    display: none;
+}
+
+@media (max-width:990px){
+    .hamburger-icon{     /* opens the sidebar*/
+        display: flex;
+        position: fixed;
+        top:20px;
+        height: 40px;
+        top: 25px;
+        left: 18%;
+        fill:white;
+        padding: 5px 10px;
+    }
+
+}
+@media (max-width:600px){
+       .hamburger-icon{     /* opens the sidebar*/
+        display: flex;
+        position: fixed;
+        top:20px;
+        height: 40px;
+        top: 25px;
+        left: 18%;
+        fill:white;
+        padding: 5px 10px;
+    }
+}
